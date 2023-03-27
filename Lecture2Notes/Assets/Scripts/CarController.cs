@@ -11,6 +11,22 @@ public class CarController : MonoBehaviour
     [SerializeField] private WheelCollider RL;
     [SerializeField] private WheelCollider RR;
 
+    public WheelCollider getWheelColliderFL()
+    {
+        return FL;
+    }
+    public WheelCollider getWheelColliderFR()
+    {
+        return FR;
+    }
+    public WheelCollider getWheelColliderRL()
+    {
+        return RL;
+    }
+    public WheelCollider getWheelColliderRR()
+    {
+        return RR;
+    }
 
     [SerializeField] private Transform FLMesh;
     [SerializeField] private Transform FRMesh;
@@ -127,4 +143,5 @@ public class CarController : MonoBehaviour
     {
         return rb;
     }
+   
 }
